@@ -46,6 +46,10 @@ CREATE TABLE [a4b7a825f67930965747445709011120_kpi].[dim_items]
 	[product_hierarchy_l3] [varchar](128) NULL,
 	[product_hierarchy_l4] [varchar](128) NULL,
 	[product_hierarchy_l5] [varchar](128) NULL,
+	[p_h_level6] [varchar](128) NULL,
+	[p_h_level7] [varchar](128) NULL,
+	[p_h_level8] [varchar](128) NULL,
+	[p_h_level9] [varchar](128) NULL,
 	[status] [varchar](128) NULL,
 	[creation_date] [datetime] NULL,
 	[lmd] [datetime] NULL,
@@ -54,7 +58,8 @@ CREATE TABLE [a4b7a825f67930965747445709011120_kpi].[dim_items]
 	[temp_controlled] [varchar](3) NULL,
 	[base_uom] [varchar](3) NULL,
 	[volume_uom] [varchar](128) NULL,
-	[weight_uom] [varchar](128) NULL
+	[weight_uom] [varchar](128) NULL,
+	[source_object_id] [varchar](128) NULL
 )
 WITH
 (
@@ -64,7 +69,7 @@ WITH
 GO
 SET ANSI_PADDING ON
 GO
-ALTER TABLE [a4b7a825f67930965747445709011120_kpi].[dim_items] ADD  CONSTRAINT [Cnstr_077e30fe2a774622bdf1cf5e3ed9542c] PRIMARY KEY NONCLUSTERED 
+ALTER TABLE [a4b7a825f67930965747445709011120_kpi].[dim_items] ADD  CONSTRAINT [Cnstr_4ed4bd265dab430bb9c7048f55988b06] PRIMARY KEY NONCLUSTERED 
 (
 	[id] ASC
 ) NOT ENFORCED 
